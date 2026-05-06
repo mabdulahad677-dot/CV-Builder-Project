@@ -566,15 +566,15 @@ class CVBuilderApp(ctk.CTk):
         row.pack(fill="x")
 
         # Photo panel
-        photo_panel = ctk.CTkFrame(row, fg_color="transparent", width=130)
+        photo_panel = ctk.CTkFrame(row, fg_color="transparent", width=150)
         photo_panel.pack(side="left", padx=(0, 24))
         photo_panel.pack_propagate(False)
 
         self.photo_label = ctk.CTkLabel(
             photo_panel, text="No\nPhoto",
-            width=110, height=110,
+            width=150, height=150,
             fg_color=BG_SECTION,
-            corner_radius=55,
+            corner_radius=5,
             font=ctk.CTkFont(size=11),
             text_color=TEXT_MUTED
         )
